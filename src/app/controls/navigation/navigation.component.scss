@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  background:linear-gradient(#47001c ,#971132 );
+  & > .navbar {
+    height: 96px;
+    max-height: 96px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin-right: 50px;   
+    
+ 
+    & .buttons-bar {
+      flex-direction: row-reverse;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+
+      & > button:not(.user-profile) {
+        margin-left: 25px;
+        border-radius: 10px;
+        padding: 30px 19px;
+        color: white;
+      }
+    }
+  }
+}
