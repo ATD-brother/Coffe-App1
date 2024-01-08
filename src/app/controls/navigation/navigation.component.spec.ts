@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MaterialModule } from '../material-ang/material.modules';
+import { MaterialModule } from '../../material/material.module';
 import { NavigationComponent } from './navigation.component';
 
 describe('NavigationComponent', () => {
@@ -9,10 +9,9 @@ describe('NavigationComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [NavigationComponent],
-      declarations: [ MaterialModule ],
-    })
-    .compileComponents();
-    
+      declarations: [MaterialModule],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
