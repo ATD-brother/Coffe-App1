@@ -1,7 +1,6 @@
 .navigation {
   display: flex;
   justify-content: center;
-  background:linear-gradient(#47001c ,#971132 );
   & > .navbar {
     height: 96px;
     max-height: 96px;
@@ -20,8 +19,7 @@
       & > button:not(.user-profile) {
         margin-left: 25px;
         border-radius: 10px;
-        padding: 30px 19px;
-        color: white;
+        padding: 30px 19px;        
       }
     }
   }
