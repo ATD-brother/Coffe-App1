@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from "./controls/navigation/navigation.component";
 import { MaterialModule } from './controls/material-ang/material.modules';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
     declarations: [
         AppComponent,
+        HomeComponent,
+        NavigationComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -17,8 +20,7 @@ import { MaterialModule } from './controls/material-ang/material.modules';
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        NavigationComponent,
-        MaterialModule
+        MaterialModule,
     ]
 })
 export class AppModule { }

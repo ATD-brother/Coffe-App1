@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
+import { MaterialModule } from 'src/app/controls/material-ang/material.modules';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
