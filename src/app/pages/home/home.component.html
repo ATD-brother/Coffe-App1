@@ -3,12 +3,44 @@
         <div class="content-1sec">
             <h1>FRESH COFFEE IN THE MORNING</h1>
             <p>Lorem, ipsum dolor sit amet consectetur a
-                qui dolorem hjrtgh  gshwst shr wtrhwt hw hw th hw h.</p>
+                qui dolorem hjrtgh gshwst shr wtrhwt hw hw th hw h.</p>
             <button mat-button class="button-menu">Menu</button>
         </div>
     </div>
     <div class="welcome">
-        
+        <div class="welcome-text">
+            <h2>Welcome to Bartons incredibly</h2>
+            <p>Your best local coffee. In addition to delicious sandwiches and cakes and hot dish of the day,</p>
+            <div class="btn-div">
+                <button mat-raised-button class="btn-view">View more</button>
+            </div>
+        </div>
     </div>
-
+    <div class="orar">
+        <div class="card">
+            <h1>Opening Hours </h1>
+        </div>
+        <div class="orar-text">
+            <div class="monday">
+                <div>Monday: 7AM - 3PM</div>
+                <div>Closed Tuesday</div>
+            </div>
+            <div class="friday">
+                <div>Friday: 7AM - 9PM</div>
+                <div>Closed Saturday & Sunday</div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <h2>Our Menu</h2>
+        <div class="card-row">
+            <mat-card *ngFor="let card of cards">
+                <img src="{{card.image}}" alt="Coffee Image"/>
+                <h2>{{card.name}}</h2>
+                <p>{{card.description}}</p>
+                <p>{{card.pirce}}</p>
+                <button>Order</button>
+            </mat-card>
+        </div>
+    </div>
 </div>

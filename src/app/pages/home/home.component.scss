@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: center;
   .first-section {
-   // background-image: url(/assets/images/HomePage/img1.jpg);
-   background-image: url(/assets/images/HomePage/backgroun-1sec-homePage.png);
+    background-image: url(/assets/images/HomePage/backgroun-1sec-homePage.png);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,6 +27,79 @@
         width: 150px;
         background-color: #b77e66;
         color: white;
+      }
+    }
+  }
+  .welcome {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: right;
+    align-items: center;
+    background-image: url(/assets/images/HomePage/image7.png);
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+    .welcome-text {
+      width: 40%;
+      h2 {
+        width: 25ch;
+        font-size: 27px;
+        line-height: 26px;
+        color: #471e22;
+      }
+      .btn-view {
+        display: flex;
+        background-color: #471e22;
+        color: white;
+        border-radius: 12px;
+      }
+    }
+  }
+  .orar {
+    background-image: url(/assets/images/HomePage/image4.png);
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    .card {
+      width: 450px;
+      height: 100px;
+      background-color: rgba($color: #221b18, $alpha: 0.6);
+      display: flex;
+      align-items: center;
+      border-radius: 12px;
+      h1 {
+        font-size: 64px;
+        color: #fff;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
+    .orar-text {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+  }
+  .menu {
+    background-image: url(/assets/images/HomePage/image6.png);
+    .card-row {
+      display: flex;
+      flex-direction: row;
+
+      mat-card {
+        width: 300px;
+        background-color: #471e22;
+        color: #fff;
+      }
+      img {
+        padding: 10px;
+        width: 90%;
+        height: auto;
+        object-fit: cover;
       }
     }
   }
