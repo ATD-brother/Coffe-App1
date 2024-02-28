@@ -66,12 +66,14 @@
     align-items: center;
     gap: 80px;
     .card {
+      padding: 15px;
       width: 450px;
       height: 100px;
       background-color: rgba($color: #221b18, $alpha: 0.6);
       display: flex;
       align-items: center;
       border-radius: 12px;
+      justify-content: center;
       h1 {
         font-size: 64px;
         color: #fff;
@@ -79,27 +81,74 @@
       }
     }
     .orar-text {
+      background-color: rgba($color: #734a39, $alpha: 0.5);
+      border-radius: 19px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      height: 150px;
       display: flex;
       flex-direction: row;
       gap: 50px;
+      h3,
+      p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: 20px;
+      }
     }
   }
   .menu {
+    padding: 10px;
     background-image: url(/assets/images/HomePage/image6.png);
+    .title-menu {
+      margin-top: 50px;
+      margin-bottom: 45px;
+      color: #903711;
+      font-size: 30px;
+      text-align: center;
+      font-weight: bold;
+    }
     .card-row {
       display: flex;
       flex-direction: row;
-
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px;
       mat-card {
+        height: 350px;
         width: 300px;
         background-color: #471e22;
         color: #fff;
+        .content-card {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .text-card {
+            padding-left: 20px;
+            height: 115px;
+          }
+          .price-order-card {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            align-items: baseline;
+          }
+        }
       }
       img {
         padding: 10px;
         width: 90%;
         height: auto;
         object-fit: cover;
+        display: flex;
+        align-self: center;
+      }
+      .btn {
+        background-color: #9e5a3d;
+        color: white;
       }
     }
   }

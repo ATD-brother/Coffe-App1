@@ -18,29 +18,40 @@
     </div>
     <div class="orar">
         <div class="card">
-            <h1>Opening Hours </h1>
+            <h1>Opening Hours</h1>
         </div>
         <div class="orar-text">
-            <div class="monday">
-                <div>Monday: 7AM - 3PM</div>
-                <div>Closed Tuesday</div>
+            <div>
+                <h3>Luni-Sambata </h3>
+                <p>08:00-19:00</p>
             </div>
-            <div class="friday">
-                <div>Friday: 7AM - 9PM</div>
-                <div>Closed Saturday & Sunday</div>
+            <div>
+                <h3>Duminica </h3>
+                <p>07:00-14:00</p>
             </div>
+
         </div>
     </div>
     <div class="menu">
-        <h2>Our Menu</h2>
+        <h2 class="title-menu">Our Menu</h2>
         <div class="card-row">
-            <mat-card *ngFor="let card of cards">
-                <img src="{{card.image}}" alt="Coffee Image"/>
-                <h2>{{card.name}}</h2>
-                <p>{{card.description}}</p>
-                <p>{{card.pirce}}</p>
-                <button>Order</button>
+            <button mat-icon-button (click)="prevCard()"
+                class="btn back"><mat-icon>keyboard_arrow_left</mat-icon></button>
+            <mat-card *ngFor="let card of cards.slice(startIndex, endIndex + 1)">
+                <img [src]="card.image" alt="Coffee Image" />
+                <div class="content-card">
+                    <div class="text-card">
+                        <h2>{{card.name}}</h2>
+                        <p>{{card.description}}</p>
+                    </div>
+                    <div class="price-order-card">
+                        <p>{{card.price}}</p>
+                        <button mat-flat-button class="order-button">Order</button>
+                    </div>
+                </div>
             </mat-card>
+            <button mat-icon-button (click)="nextCard()"
+                class="btn next"><mat-icon>keyboard_arrow_right</mat-icon></button>
         </div>
     </div>
 </div>
