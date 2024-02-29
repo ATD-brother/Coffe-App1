@@ -1,25 +1,41 @@
-name: Run Tests
+name: CI
 
 on:
-  pull_request:
+  push:
     branches:
       - main
+  pull_request:
+    branches:
+      - '*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14'
+    - uses: actions/checkout@v2
 
     - name: Install dependencies
       run: npm install
 
+    - name: Start Karma server
+      run: karma start
+
     - name: Run tests
-      run: npm test
+      run: npm test -- --single-run
+
+    outputs:
+      test-success: ${{ success() }}
+
+  merge:
+    needs: build
+    if: ${{ needs.build.outputs.test-success == 'true' }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Merge pull request
+      run: git merge --no-ff
+
