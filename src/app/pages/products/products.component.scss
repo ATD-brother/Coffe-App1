@@ -1,0 +1,69 @@
+.products-page{
+    margin-top: -50px;
+    .header-product-section{
+        display: flex;
+        padding-left: 150px;
+        text-align: center;
+        height: 764px;
+        display: flex;
+        align-items: center;
+        h1.product-title-header{
+            font-size: 64px;
+            line-height: 96px;
+            max-width: 490px;
+            color: white;
+            font-weight: 500;
+        }
+    }
+
+    .all-coffees-section{
+        background-color: rgba(0, 0, 0, 0.12);
+        padding-top: 80px;
+        h2{
+            font-size: 40px;
+            line-height: 60px;
+            font-weight: 600;
+            color: #6F3D28;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 80px;
+        }
+        .blurbs-coffees{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            .blurb-product{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 200px;
+                }
+                h3{
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    width: 127px;
+                    text-align: center;
+                    color: black;
+                }
+
+                p.price{
+                    color: #E04848;
+                    font-size: 20px;
+                    line-height: 30px;
+                    font-weight: 400;
+                }
+
+                p.ingredients{
+                    color: black;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    width: 231px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
