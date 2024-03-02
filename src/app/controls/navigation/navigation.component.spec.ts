@@ -8,11 +8,9 @@ describe('NavigationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavigationComponent],
-      declarations: [ MaterialModule ],
-    })
-    .compileComponents();
-    
+      declarations: [NavigationComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

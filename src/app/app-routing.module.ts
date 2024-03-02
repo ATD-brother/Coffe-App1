@@ -5,6 +5,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { NavigationComponent } from './controls/navigation/navigation.component';
+import { FooterComponent } from './controls/footer/footer.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -24,6 +25,9 @@ export class AppRoutingModule {
     AboutComponent,
     ContactComponent,
     MenuComponent,
+  ];
+  static Controls = [
     NavigationComponent,
+    FooterComponent
   ];
 }
