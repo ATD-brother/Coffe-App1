@@ -5,8 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './controls/material-ang/material.modules';
-import { AgmCoreModule } from '@agm/core';
-
 @NgModule({
   declarations: [
     AppComponent,

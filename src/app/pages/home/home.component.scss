@@ -223,7 +223,9 @@
     .map {
       height: 100%;
       border: 3px solid #795341;
-      background-image: url(/assets/images/HomePage/map.png);
     }
   }
+}
+::ng-deep ul{
+  display: none;
 }
