@@ -10,14 +10,15 @@
     height: 500px;
     display: flex;
     align-items: center;
+    margin-top: -50px;
     .content-1sec {
-      width: 36%;
+      width: 40%;
       color: white;
       margin-left: 5%;
       h1 {
-        font-size: 35px;
+        font-size: 43px;
         font-weight: bold;
-        line-height: 43px;
+        line-height: 53px;
       }
       p {
         font-size: 18px;
@@ -25,7 +26,8 @@
       }
       .button-menu {
         margin-top: 3%;
-        width: 150px;
+        width: 200px;
+        height: 50px;
         background-color: #b77e66;
         color: white;
       }
@@ -33,8 +35,6 @@
   }
   .welcome {
     display: flex;
-    flex-direction: row;
-    gap: 100px;
     justify-content: right;
     align-items: center;
     background-image: url(/assets/images/HomePage/image7.png);
@@ -43,6 +43,7 @@
     height: 650px;
     .welcome-text {
       width: 40%;
+      margin-right: 90px;
       h2 {
         width: 25ch;
         font-size: 27px;
@@ -120,14 +121,18 @@
       margin-bottom: 100px;
       mat-card {
         width: 300px;
-        background-color: #471e22;
+        background-color: rgba($color: #734a39, $alpha: 0.88);
         color: #fff;
+        height: 440px;
+        border-radius: 20px;
         .content-card {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          height: 100%;
           .text-card {
             padding-left: 20px;
+            padding-right: 20px;
             height: 115px;
           }
           .price-order-card {
@@ -137,6 +142,13 @@
             padding-right: 20px;
             align-items: baseline;
             margin-bottom: 10px;
+            button {
+              width: 40%;
+            }
+            p {
+              font-size: 20px;
+              font-weight: bold;
+            }
           }
         }
       }
@@ -152,6 +164,66 @@
         background-color: #9e5a3d;
         color: white;
       }
+    }
+  }
+  .clients-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/HomePage/client-back.png);
+    background-size: cover;
+    background-position: left;
+    height: 500px;
+    h2 {
+      margin-top: 70px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 35px;
+    }
+    .client-row {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      margin-top: 30px;
+      .client-card {
+        width: 300px;
+        height: 240px;
+        background-color: rgba($color: #583115, $alpha: 0.55);
+        display: flex;
+        align-items: center;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-top: -25px;
+        }
+        .title-card {
+          font-size: 32px;
+          line-height: 35px;
+          font-weight: bold;
+          max-width: 9ch;
+          color: white;
+          margin-top: 25px;
+        }
+        .contet-para {
+          width: 24ch;
+          color: white;
+          font-size: 16px;
+        }
+        .name-client {
+          color: #54dd8b;
+        }
+      }
+    }
+  }
+  .map-section {
+    background-color: #e3d9d5;
+    height: 400px;
+    padding: 30px;
+    .map {
+      height: 100%;
+      border: 3px solid #795341;
+      background-image: url(/assets/images/HomePage/map.png);
     }
   }
 }

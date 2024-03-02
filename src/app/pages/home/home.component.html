@@ -2,8 +2,10 @@
     <div class="first-section">
         <div class="content-1sec">
             <h1>FRESH COFFEE IN THE MORNING</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur a
-                qui dolorem hjrtgh gshwst shr wtrhwt hw hw th hw h.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
             <button mat-button class="button-menu">Menu</button>
         </div>
     </div>
@@ -53,5 +55,21 @@
             <button mat-icon-button (click)="nextCard()"
                 class="btn next"><mat-icon>keyboard_arrow_right</mat-icon></button>
         </div>
+    </div>
+    <div class="clients-section">
+        <h2>What our Customer</h2>
+        <div class="client-row">
+            <mat-card class="client-card" *ngFor="let card of clients">
+                <img src="{{card.personImg}}" alt="">
+                <h3 class="title-card">{{card.Title}}</h3>
+                <p class="contet-para">{{card.content}}</p>
+                <h3 class="name-client">{{card.name}}</h3>
+            </mat-card>
+        </div>
+    </div>
+    <div class="map-section">
+<div class="map">
+    
+</div>
     </div>
 </div>
