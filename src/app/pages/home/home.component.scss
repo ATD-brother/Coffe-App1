@@ -226,6 +226,15 @@
     }
   }
 }
-::ng-deep ul{
+::ng-deep ul {
+  display: none;
+}
+::ng-deep .ol-zoom.ol-unselectable.ol-control {
+  display: none;
+}
+::ng-deep .ol-rotate.ol-unselectable.ol-control.ol-hidden {
+  display: none;
+}
+::ng-deep .ol-attribution.ol-unselectable.ol-control.ol-uncollapsible {
   display: none;
 }

@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
       ],
       view: new View({
         center: aradCoord,
-        zoom: 10,
+        zoom: 15,
       }),
     });
   }
